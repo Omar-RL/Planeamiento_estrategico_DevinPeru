@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matriz PEyEA, BCG, IE</title>
+
+    <!-- Vincula Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="icono.png" type="image/x-icon" />
+
+    <!-- Estilos personalizados -->
+    <style>
+      .matrix {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.png" alt="Logo de DevinPeru" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="mision_vision.html">Misión y Visión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="valores_politicas.html"
+              >Valores y Políticas</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="organigrama.html">Organigrama</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="auditoria_externa_interna.html"
+              >Auditoría Externa e Interna</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="competencias.html"
+              >Matriz de competencias</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="matriz_foda.html">Matriz FODA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="matrices_adicionales.html"
+              >Matriz PEyEA, BCG, IE y Estrategia Principal</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <h2>Matrices PEyEA, BCG, IE, Estrategia Principal</h2>
+      <div class="btn-group" role="group" aria-label="Matrices">
+        <button
+          type="button"
+          class="btn btn-primary"
+          onclick="showMatrix('peyea')"
+        >
+          Matriz PEyEA
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          onclick="showMatrix('bcg')"
+        >
+          Matriz BCG
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          onclick="showMatrix('ie')"
+        >
+          Matriz IE
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          onclick="showMatrix('estrategia')"
+        >
+          Matriz de Estrategia Principal
+        </button>
+      </div>
+
+      <!-- Matrices -->
+      <div id="peyea" class="matrix">
+        <h4>Matriz PEyEA</h4>
+
+        <h5><u>Fortaleza Financiera (FF)</u></h5>
+        <p><strong>Cálculos de Fortaleza Financiera:</strong></p>
+        <ul>
+          <li>Rendimiento sobre la inversión: 5</li>
+          <li>Capital de trabajo: 4</li>
+          <li>Facilidad para salir del mercado: 5</li>
+          <li>Riesgo involucrado en el negocio: 3</li>
+        </ul>
+        <p><strong>Total FF =</strong> 5 + 4 + 5 + 3 = 17</p>
+        <p>
+          <strong>Calificación Ponderada FF =</strong> Total FF / 4 = 17 / 4 =
+          4.25
+        </p>
+
+        <h5><u>Fortaleza Industrial (FI)</u></h5>
+        <p><strong>Cálculos de Fortaleza Industrial:</strong></p>
+        <ul>
+          <li>Potencial de crecimiento: 6</li>
+          <li>Potencial de utilidades: 4</li>
+          <li>Estabilidad financiera: 2</li>
+          <li>Conocimiento tecnológico: 5</li>
+          <li>Utilización de recursos: 5</li>
+          <li>Facilidad de ingreso al mercado: 5</li>
+        </ul>
+        <p><strong>Total FI =</strong> 6 + 4 + 2 + 5 + 5 + 5 = 27</p>
+        <p>
+          <strong>Calificación Ponderada FI =</strong> Total FI / 6 = 27 / 6 =
+          4.5
+        </p>
+
+        <h5><u>Estabilidad Ambiental (EA)</u></h5>
+        <p><strong>Cálculos de Estabilidad Ambiental:</strong></p>
+        <ul>
+          <li>Cambios tecnológicos: -3</li>
+          <li>Tasa de inflación: -4</li>
+          <li>Variación de la demanda: -2</li>
+          <li>Rango de precios de los productos de la competencia: -3</li>
+          <li>Barreras de ingreso al mercado: -1</li>
+          <li>Presión competitiva: -5</li>
+        </ul>
+        <p><strong>Total EA =</strong> -3 - 4 - 2 - 3 - 1 - 5 = -18</p>
+        <p>
+          <strong>Calificación Ponderada EA =</strong> Total EA / 6 = -18 / 6 =
+          -3.0
+        </p>
+
+        <h5><u>Ventaja Competitiva (VC)</u></h5>
+        <p><strong>Cálculos de Ventaja Competitiva:</strong></p>
+        <ul>
+          <li>Participación en el mercado: -2</li>
+          <li>Calidad del producto: -1</li>
+          <li>Lealtad de los clientes: -2</li>
+          <li>Conocimiento tecnológico: -1</li>
+          <li>Control sobre proveedores y distribuidores: -2</li>
+        </ul>
+        <p><strong>Total VC =</strong> -2 - 1 - 2 - 1 - 2 = -8</p>
+        <p>
+          <strong>Calificación Ponderada VC =</strong> Total VC / 5 = -8 / 5 =
+          -1.6
+        </p>
+
+        <h5><u>Cálculos Adicionales:</u></h5>
+        <ul>
+          <li>
+            Fortaleza industrial (FI) + Ventaja competitiva (VC): FI + VC = 4.5
+            + (-1.6) = 2.9
+          </li>
+          <li>
+            Fortaleza financiera (FF) + Estabilidad ambiental (EA): FF + EA =
+            4.25 + (-3.0) = 1.25
+          </li>
+        </ul>
+        <img src="matriz_peyea.png" alt="Matriz PEyEA" class="img-fluid" width="800" />
+        <p>
+          Interpretación de la Matriz PEyEA: La posición de DevinPeru en el
+          cuadrante intensivo (donde FI + VC = 2.9 y FF + EA = 1.25) sugiere que
+          la empresa debería enfocarse en estrategias de crecimiento y
+          desarrollo de mercado.
+        </p>
+        <p>A continuación, algunas estrategias intensivas incluyen:</p>
+        <ul>
+          <li>
+            <strong>Penetración en el mercado:</strong> Invertir en marketing y
+            ventas para aumentar su participación en el mercado, mejorando la
+            lealtad del cliente y la calidad del servicio.
+          </li>
+          <li>
+            <strong>Desarrollo de mercados:</strong> Explorar nuevos segmentos
+            de mercado o regiones geográficas, posiblemente en mercados menos
+            competitivos, donde su fortaleza industrial le permita capturar
+            demanda de manera más efectiva.
+          </li>
+          <li>
+            <strong>Desarrollo de productos:</strong> Aprovechar su fortaleza
+            financiera e industrial para innovar y mejorar sus productos,
+            aumentando así su ventaja competitiva.
+          </li>
+        </ul>
+        <p>
+          En resumen, DevinPeru debería enfocarse en aprovechar sus fortalezas
+          financieras e industriales, mientras busca mejorar su ventaja
+          competitiva y enfrenta el entorno cambiante con adaptabilidad e
+          innovación.
+        </p>
+      </div>
+      <div id="bcg" class="matrix">
+        <h4>Matriz BCG</h4>
+        <img src="bcg.png" alt="Matriz BCG" class="img-fluid" />
+        <p>
+          Interpretación de la Matriz BCG: La Matriz BCG es una herramienta
+          estratégica utilizada para analizar el portafolio de productos de una
+          empresa, clasificados según su tasa de crecimiento y su cuota de
+          mercado relativa. La matriz ayuda a identificar los productos
+          estrella, los signos de interrogación, los vacas lecheras y los
+          perros, lo que orienta las decisiones de inversión y desinversión.
+        </p>
+      </div>
+      <div id="ie" class="matrix">
+        <h4>Matriz IE</h4>
+        <img src="ie.png" alt="Matriz IE" class="img-fluid" />
+        <p>
+          Interpretación de la Matriz IE: La Matriz IE (Estrategia
+          Interna-Externa) se utiliza para evaluar el desempeño y la posición
+          estratégica de una empresa considerando tanto los factores internos
+          como los externos. Esta matriz combina aspectos de la Matriz BCG y la
+          Matriz de Evaluación del Factor Interno (EFI), proporcionando una
+          visión integral de la situación de la empresa.
+        </p>
+      </div>
+      <div id="estrategia" class="matrix">
+        <h4>Matriz de Estrategia Principal</h4>
+        <img
+          src="estrategia.png"
+          alt="Matriz Estrategia Principal"
+          class="img-fluid"
+        />
+        <p>
+          Interpretación de la Matriz de Estrategia Principal: Esta matriz se
+          enfoca en determinar cuál es la estrategia principal que debe adoptar
+          la organización para enfrentar los desafíos del mercado, utilizando el
+          análisis de sus fortalezas, debilidades, oportunidades y amenazas. Es
+          una herramienta clave para la toma de decisiones estratégicas en
+          empresas que buscan posicionarse mejor en su industria.
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>Contacto: devinperu@example.com</p>
+    </footer>
+
+    <!-- Vincula Bootstrap JS y el script para mostrar las matrices -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Función para mostrar la matriz seleccionada y ocultar las demás
+      function showMatrix(matrixId) {
+        // Ocultar todas las matrices
+        const matrices = document.querySelectorAll(".matrix");
+        matrices.forEach((matrix) => (matrix.style.display = "none"));
+
+        // Mostrar la matriz seleccionada
+        const selectedMatrix = document.getElementById(matrixId);
+        selectedMatrix.style.display = "block";
+      }
+
+      // Mostrar la primera matriz por defecto
+      window.onload = function () {
+        showMatrix("peyea");
+      };
+    </script>
+  </body>
+</html>

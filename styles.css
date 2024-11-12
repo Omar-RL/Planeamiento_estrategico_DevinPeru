@@ -1,0 +1,88 @@
+/* Barra de navegación */
+.navbar {
+    background-color: #003366; /* Azul oscuro para la barra de navegación */
+    color: white;
+}
+
+.navbar-brand img {
+    width: 100%;
+    max-width: 150px; /* Tamaño máximo del logo */
+    height: auto;
+}
+
+.navbar-nav .nav-link {
+    color: #2e2a2a; /* Color claro para los enlaces */
+    font-size: 1rem; /* Tamaño de fuente para los enlaces */
+    transition: color 0.3s ease-in-out; /* Transición suave */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700; /* Dorado en hover */
+}
+
+/* Reglas para enlaces activos y foco */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:focus {
+    color: #2a3e2c;  /* Color dorado para el enlace activo */
+    font-weight: bold; /* Negrita para el enlace activo */
+}
+
+/* Enlaces no activos al pasar el mouse */
+.navbar-nav .nav-link:not(.active):hover {
+    color: #363333; /* Color más claro al pasar el mouse */
+}
+
+/* Contenido principal */
+.container {
+    margin-top: 30px;
+    padding: 30px;
+    background-color: #ffffff; /* Fondo blanco para el contenido */
+    border-radius: 8px; /* Bordes redondeados para un look más moderno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Títulos principales */
+h3 {
+    font-size: 2.5rem;  /* Tamaño más grande para el h3 */
+    color: #003366;     /* Azul oscuro para los títulos */
+    font-weight: bold;  /* Peso negrita */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+h4 {
+    font-size: 1.8rem;  /* Tamaño ligeramente más pequeño que el h3 */
+    color: #004488;     /* Color azul más claro que h3 */
+    font-weight: normal; /* Peso normal para h4 */
+    margin-bottom: 15px; /* Espacio debajo del título */
+}
+
+/* Párrafos y textos */
+p {
+    font-size: 1.1rem;
+    color: #555; /* Color de texto más suave para los párrafos */
+    margin-bottom: 15px;
+}
+
+strong {
+    font-weight: bold;
+    color: #333; /* Asegura que los títulos dentro de los párrafos se vean destacados */
+}
+
+/* Estilo para la imagen del organigrama */
+.img-fluid {
+    max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    height: auto;
+    margin-bottom: 20px; /* Espaciado inferior para separarla de los textos */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}

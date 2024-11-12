@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matriz de Competencias</title>
+
+    <!-- Vincula Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="icono.png" type="image/x-icon">
+
+    <!-- Estilos personalizados -->
+    <style>
+      .matrix {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo.png" alt="Logo de DevinPeru">
+        </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="mision_vision.html">Misión y Visión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="valores_politicas.html"
+              >Valores y Políticas</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="organigrama.html">Organigrama</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="auditoria_externa_interna.html"
+              >Auditoría Externa e Interna</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="competencias.html"
+              >Matriz de competencias</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="matriz_foda.html"
+              >Matriz FODA</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="matrices_adicionales.html"
+              >Matriz PEyEA, BCG, IE y Estrategia Principal</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <h2>Matriz de Competencias</h2>
+      <div class="btn-group" role="group" aria-label="Matrices">
+        <button
+          type="button"
+          class="btn btn-primary"
+          onclick="showMatrix('efe')"
+        >
+          Matriz EFE
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          onclick="showMatrix('efi')"
+        >
+          Matriz EFI
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          onclick="showMatrix('perfil')"
+        >
+          Matriz del Perfil Competitivo
+        </button>
+      </div>
+
+      <!-- Matrices -->
+      <div id="efe" class="matrix">
+        <h4>Matriz de Evaluación del Factor Externo (EFE)</h4>
+        <img src="matriz_efe.png" alt="Matriz EFE" class="img-fluid" />
+        <p>
+            Interpretación: El puntaje obtenido de 2.95 indica que la empresa está respondiendo de manera adecuada a las oportunidades y amenazas externas, pero todavía hay margen de mejora. Por lo tanto, DEVIN PERU aprovecha bien las oportunidades del mercado, especialmente en áreas de digitalización y automatización. Sin embargo, debe mejorar su capacidad para competir, actualizarse tecnológicamente y gestionar amenazas como la ciberseguridad y tener planes o medidas para no verse demasiado afectado por la inestabilidad económica.
+            Mejor oportunidad es el “Crecimiento de la demanda de digitalización en PYMEs y municipalidades”, el crecimiento en la demanda de digitalización representa una oportunidad crucial para DEVIN PERÚ para expandir su mercado y aumentar sus ingresos.
+            La peor amenaza es “Amenazas de seguridad cibernética" a pesar de tener el menor peso ponderado, la amenaza de seguridad cibernética es crítica, especialmente para una empresa que desarrolla soluciones de software y sistemas de información.
+
+        </p>
+      </div>
+      <div id="efi" class="matrix">
+        <h4>Matriz de Evaluación del Factor Interno (EFI)</h4>
+        <img src="matriz_efi.png" alt="Matriz EFI" class="img-fluid" />
+        <p>
+            Interpretación: El puntaje obtenido de 2.75 indica que la empresa tiene fortalezas importantes, pero también áreas internas que limitan su desempeño. Entonces, DEVIN PERU tiene una sólida base interna, destacando su equipo altamente capacitado y su enfoque en la satisfacción del cliente. Sin embargo, para seguir creciendo, debe superar su limitada presencia internacional, mejorar sus alianzas estratégicas y aumentar sus recursos para investigación y desarrollo. Además, la capacidad de escalar operaciones a nivel regional debe ser una prioridad para evitar estancamientos en su crecimiento.
+            La mejor fortaleza es el “Equipo de desarrollo con amplia experiencia y certificaciones en tecnologías clave”, esta fortaleza tiene el mayor valor ponderado dentro de las fortalezas en la matriz EFI, lo que refleja que el equipo altamente calificado y experimentado es un activo significativo para DEVIN PERÚ.
+            La peor debilidad es “Recursos limitados para investigación y desarrollo (I+D)”, porque la limitación en este aspecto podría restringir la capacidad de DEVIN PERÚ para mantenerse al día con las tendencias tecnológicas y responder efectivamente a las cambiantes demandas del mercado.
+        </p>
+      </div>
+      <div id="perfil" class="matrix">
+        <h4>Matriz del Perfil Competitivo</h4>
+        <img src="matriz_mpc.png" alt="Matriz Perfil" class="img-fluid" />
+        <p>
+            Interpretación: Analizando los resultados obtenidos de DEVIN PERU (2.40), Innovar Information Technology Partners SRL (2.80) y Cusco Informático (2.10) , podemos comparar y deducir por los factores que, Devinperu tiene una fuerte posición en cuanto a calidad del servicio e infraestructura, pero hay áreas donde puede mejorar, 
+            especialmente en participación de mercado y competitividad de precios. La empresa podría beneficiarse de estrategias dirigidas a mejorar su visibilidad y posicionamiento en precios para capitalizar más eficazmente su alta calidad de servicio y sólida infraestructura, intentando cerrar la brecha con Innovar, que parece tener un perfil más dominante en el mercado.
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>Contacto: devinperu@example.com</p>
+    </footer>
+
+    <!-- Vincula Bootstrap JS y el script para mostrar las matrices -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Función para mostrar la matriz seleccionada y ocultar las demás
+      function showMatrix(matrixId) {
+        // Ocultar todas las matrices
+        const matrices = document.querySelectorAll(".matrix");
+        matrices.forEach((matrix) => (matrix.style.display = "none"));
+
+        // Mostrar la matriz seleccionada
+        const selectedMatrix = document.getElementById(matrixId);
+        selectedMatrix.style.display = "block";
+      }
+
+      // Mostrar la primera matriz por defecto
+      window.onload = function () {
+        showMatrix("efe");
+      };
+    </script>
+  </body>
+</html>

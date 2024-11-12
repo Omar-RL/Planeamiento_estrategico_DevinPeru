@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matriz FODA</title>
+
+    <!-- Vincula Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="icono.png" type="image/x-icon">
+
+    <!-- Estilos personalizados -->
+    <style>
+      .matrix {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo.png" alt="Logo de DevinPeru">
+        </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="mision_vision.html">Misión y Visión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="valores_politicas.html"
+              >Valores y Políticas</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="organigrama.html">Organigrama</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="auditoria_externa_interna.html"
+              >Auditoría Externa e Interna</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="competencias.html"
+              >Matriz de competencias</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="matriz_foda.html"
+              >Matriz FODA</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="matrices_adicionales.html"
+              >Matriz PEyEA, BCG, IE y Estrategia Principal</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <h2>Matriz FODA</h2>
+
+      <!-- Matriz FODA -->
+      <div id="foda" class="matrix" style="display: block">
+        <img src="matriz_foda.png" alt="Matriz FODA" class="img-fluid" />
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>Contacto: devinperu@example.com</p>
+    </footer>
+
+    <!-- Vincula Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
