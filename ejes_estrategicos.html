@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MATRICES ESTRATÉGICAS</title>
+
+    <!-- Vincula Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="icono.png" type="image/x-icon" />
+
+    <style>
+      .matrix {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="logo.png" alt="Logo de DevinPeru">
+        </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="mision_vision.html">Misión y Visión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="valores_politicas.html"
+              >Valores y Políticas</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="organigrama.html">Organigrama</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="auditoria_externa_interna.html"
+              >Auditoría Externa e Interna</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="competencias.html"
+              >Matriz de competencias</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="matriz_foda.html"
+              >Matriz FODA</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="matrices_adicionales.html"
+              >ETAPA DE AJUSTE</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="matriz_mpec.html"
+              >Matriz MPEC</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="ejes_estrategicos.html"
+              >Ejes estratégicos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="accion_estrategica.html"
+              >Acción Estratégica</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="efecto_objetivos_estrategicos.html"
+              >Efecto de los Objetivos Estratégicos</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="container my-5">
+      <h2 class="text-center">EJES ESTRATÉGICOS</h2>
+      <p class="text-center">
+        Selecciona un eje estratégico para visualizar su contenido detallado:
+      </p>
+      <div class="d-flex flex-column align-items-center">
+        <button
+          type="button"
+          class="btn btn-primary mb-2"
+          onclick="showMatrix('matriz1')"
+        >
+          Expansión y Diversificación del Mercado
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary mb-2"
+          onclick="showMatrix('matriz2')"
+        >
+          Fortalecimiento de la Innovación y el Desarrollo Tecnológico
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary mb-2"
+          onclick="showMatrix('matriz3')"
+        >
+          Mejora Continua del Servicio al Cliente
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary mb-2"
+          onclick="showMatrix('matriz4')"
+        >
+          Aseguramiento de la Seguridad de la Información
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary mb-2"
+          onclick="showMatrix('matriz5')"
+        >
+          Optimización de la Estructura Organizacional y Operativa
+        </button>
+      </div>
+
+      <div id="matriz1" class="matrix my-4">
+        <h4>Expansión y Diversificación del Mercado</h4>
+        <img src="eje_estrategico_1.png" alt="Matriz 1" class="img-fluid" style="display: block; margin: 20px auto;"/>
+        <p>Interpretación:
+            La estrategia de DevinPeru para la expansión y diversificación del mercado se centra en aumentar su presencia tanto a nivel nacional como 
+            internacional, prestando especial atención a los sectores públicos y las PYMEs. Las acciones incluyen campañas de marketing y publicidad local, 
+            estudios de mercado en países vecinos, y el fortalecimiento de la presencia digital. Además, se planea establecer asociaciones estratégicas 
+            para acceder a nuevos segmentos de clientes, lo cual es crucial para el crecimiento sostenido en un entorno competitivo.
+            </p>
+      </div>
+      
+      <div id="matriz2" class="matrix my-4">
+        <h4>Fortalecimiento de la Innovación y el Desarrollo Tecnológico</h4>
+        <img src="eje_estrategico_2.png" alt="Matriz 2" class="img-fluid" style="display: block; margin: 20px auto;" />
+        <p>Interpretación:
+            DevinPeru busca mantenerse a la vanguardia tecnológica mediante el desarrollo de nuevas funcionalidades con tecnologías emergentes como 
+            la inteligencia artificial (IA) y el Business Intelligence (BI). La inversión en proyectos de investigación y desarrollo (I+D) y la 
+            capacitación continua del equipo en nuevas tecnologías aseguran que la empresa pueda ofrecer soluciones innovadoras y efectivas. Estas 
+            acciones permitirán a DevinPeru mejorar la eficiencia de sus clientes y mantener una ventaja competitiva en el mercado.
+            </p>
+      </div>
+      
+      <div id="matriz3" class="matrix my-4">
+        <h4>Mejora Continua del Servicio al Cliente</h4>
+        <img src="eje_estrategico_3.png" alt="Matriz 3" class="img-fluid" style="display: block; margin: 20px auto;" />
+        <p>Interpretación:
+            La mejora continua del servicio al cliente es una prioridad para DevinPeru, enfocándose en asegurar una alta satisfacción a través de un 
+            servicio postventa robusto y soporte técnico sólido. Implementar canales de retroalimentación y capacitar continuamente al equipo de soporte 
+            técnico son acciones clave. La política de mejora continua y la reducción del tiempo de respuesta a consultas también son fundamentales para 
+            mantener la fidelidad del cliente y una buena reputación en el mercado.
+            </p>
+      </div>
+      
+      <div id="matriz4" class="matrix my-4">
+        <h4>Aseguramiento de la Seguridad de la Información</h4>
+        <img src="eje_estrategico_4.png" alt="Matriz 4" class="img-fluid" style="display: block; margin: 20px auto;" />
+        <p>Interpretación:
+            En cuanto a la seguridad de la información, DevinPeru se enfoca en fortalecer las prácticas de ciberseguridad y la protección de datos 
+            para asegurar la confidencialidad y la integridad de la información. Las acciones incluyen la implementación de protocolos de seguridad, 
+            auditorías regulares y la capacitación del personal en buenas prácticas de seguridad. Estas medidas son esenciales para minimizar los riesgos 
+            de filtraciones o ataques, y para mantener la confianza de los clientes.
+            </p>
+      </div>
+      
+      <div id="matriz5" class="matrix my-4">
+        <h4>Optimización de la Estructura Organizacional y Operativa</h4>
+        <img src="eje_estrategico_5.png" alt="Matriz 5" class="img-fluid" style="display: block; margin: 20px auto;" />
+        <p>Interpretación:
+            Para optimizar la estructura organizacional y operativa, DevinPeru planea revisar y ajustar roles y responsabilidades, implementar metodologías 
+            ágiles y automatizar procesos administrativos. Estas acciones permitirán a la empresa adaptarse al crecimiento y mejorar la eficiencia en la 
+            entrega de servicios. La reducción del tiempo promedio de entrega de proyectos y de las tareas administrativas repetitivas son indicadores 
+            de éxito clave, que contribuirán a un ambiente de trabajo más productivo y enfocado en actividades de alto valor.
+            </p>
+      </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>Contacto: ventas@devinperu.com | Teléfono: +51 987 844 299 | +51 984 211 396</p>
+    </footer>
+
+    <!-- Vincula Bootstrap JS y script para manejar matrices -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function showMatrix(matrixId) {
+        // Oculta todas las matrices
+        const matrices = document.querySelectorAll(".matrix");
+        matrices.forEach((matrix) => {
+          matrix.style.display = "none";
+        });
+
+        // Muestra la matriz seleccionada
+        document.getElementById(matrixId).style.display = "block";
+      }
+    </script>
+  </body>
+</html>
